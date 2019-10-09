@@ -13,7 +13,7 @@ code {
 }
 
 a {
-  color: darkorange;
+  color: rgb(14, 137, 185);
 }
 ul,
 li {
@@ -25,5 +25,4 @@ li {
 ul,
 li a {
   text-decoration: none;
-  text-transform: uppercase;
 }

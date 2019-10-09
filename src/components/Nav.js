@@ -16,7 +16,7 @@ const Nav = () => {
         </li>
         <li>
           <NavLink activeStyle={style} to="/about">
-            About
+            Movie
           </NavLink>
         </li>
         <li>
