@@ -20,8 +20,8 @@ const Nav = () => {
           </NavLink>
         </li>
         <li>
-          <NavLink activeStyle={style} to="/contact">
-            Contact
+          <NavLink activeStyle={style} to="/protected">
+            Premium
           </NavLink>
         </li>
       </ul>

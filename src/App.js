@@ -6,6 +6,9 @@ import About from './components/About';
 import Contact from './components/Contact';
 import Nav from './components/Nav';
 import Movies from './components/Movies';
+import PrivateRoute from './components/PrivateRoute';
+import Login from './components/Login';
+import AuthButton from './components/AuthButton';
 
 const App = () => {
   return (
@@ -15,11 +18,14 @@ const App = () => {
       </div>
 
       <div className="App">
+        <AuthButton />
         <Switch>
           <Route path="/" exact component={Home} />
           <Route path="/about" component={About} />
-          <Route path="/contact" component={Contact} />
+          <PrivateRoute path="/protected" component={Contact} />
           <Route path="/movies/:id" component={Movies} />
+
+          <Route path="/login" component={Login} />
         </Switch>
       </div>
     </BrowserRouter>
